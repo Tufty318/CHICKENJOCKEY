@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cj:boxing_ring_spawner",
+      "category": "misc",
+      "icon": {
+        "texture": "boxing_ring_spawner"
+      }
+    },
+    "components": {
+      "minecraft:use_duration": 1,
+      "minecraft:use_animation": "eat",
+      "minecraft:on_use": {
+        "event": "cj:spawn_ring"
+      }
+    },
+    "events": {
+      "cj:spawn_ring": {
+        "run_command": {
+          "command": [
+            "function spawn_ring"
+          ]
+        }
+      }
+    }
+  }
+}
