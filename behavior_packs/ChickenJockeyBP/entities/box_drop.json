@@ -1,0 +1,30 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cj:box_drop",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:movement": {
+        "value": -0.1
+      },
+      "minecraft:timer": {
+        "time": 60,
+        "looping": false
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "run_command": {
+          "command": [
+            "playsound cj:chicken_jockey @a ~ ~ ~",
+            "summon cj:chicken_jockey ~ ~-1 ~"
+          ]
+        }
+      }
+    }
+  }
+}
