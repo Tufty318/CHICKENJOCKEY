@@ -1,0 +1,11 @@
+{
+  "cj:chicken_jockey": {
+    "sounds": [
+      {
+        "name": "sounds/chicken_jockey",
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    ]
+  }
+}
